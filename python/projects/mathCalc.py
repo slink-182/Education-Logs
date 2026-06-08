@@ -1,3 +1,26 @@
+# program to run smaller test functions inside of
+# run each question/problem
+def main():
+    while (True):    
+        c = input("select Q (or 0 to quit)\n: ")
+        if not c.isdigit():
+            print("Number must be int!") 
+        else:
+            c = int(c)
+            if c == 0:
+                print("Have a great day!")
+                break
+            elif c == 1:
+                Q1()
+            elif c == 2:
+                Q2()
+            elif c == 3:
+                Q3()
+            elif c == 4:
+                Q4()
+            else:
+                print("No function found.")
+
 
 def Q1():
     x = 10
@@ -24,33 +47,18 @@ def Q2():
     b + 2 is just intValue + 2.
     '''
 
-# Q2()
-
 def Q3():
     numberList = range(1,5)
     sqrs = [i*i for i in numberList]
     print(sqrs)
     
 
-
-# run each question/problem
-def main():
-    while (True):    
-        c = input("select Q\n: ")
-        c = c.isdigit()
-        if not c.isdigit():
-            print("Number must be int!") 
-        else:
-            c = c.isdigit()
-            if c == 0:
-                print("Have a great day!")
-                break
-            elif c == 1:
-                Q1()
-            elif c == 2:
-                Q2()
-            elif c == 3:
-                Q3()
+def Q4():
+    password = "123"
+    if password == 123:
+        print("logged in")
+    else:
+        print("incorrect password")
 
 
 main()
