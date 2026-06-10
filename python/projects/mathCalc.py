@@ -18,6 +18,10 @@ def main():
                 Q3()
             elif c == 4:
                 Q4()
+            elif c == 5:
+                Q5()
+            elif c == 6:
+                Q6()
             else:
                 print("No function found.")
 
@@ -59,6 +63,21 @@ def Q4():
         print("logged in")
     else:
         print("incorrect password")
+
+def Q5():
+    a = "Good " + "Morning"
+    if a == "Good Morning":
+        print("hello")
+    else:
+        print("bye")
+
+def Q6():
+    n = 1
+    s = 4
+    while n < 9:
+        print(" " * s + "*" * n)
+        n += 2
+        s -= 1
 
 
 main()
